@@ -38,7 +38,7 @@
 
 </head>
 <body>
-<header class="container-fluid bg1">
+<header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
     <div class="container">
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
@@ -65,13 +65,9 @@ wp_nav_menu( array(
 ?>
 
       </nav>
-
-      <div class="tag">
-
-      <h1> Games Design For the Future </h1>
-    </div> 
-    </div> <!-- container -->
-    
-<?php wp_head(); ?> <!-- very important that this code is added-->
-
-    </header> <!-- container fluid -->
+   <div class="tag">
+   <h1><?php the_field('maintagline'); ?></h1>
+      </div> 
+      </div> <!-- container -->
+      <?php wp_head(); ?> <!-- very important that this code is added-->
+      </header> <!-- container fluid -->
