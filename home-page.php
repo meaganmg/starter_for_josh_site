@@ -26,7 +26,7 @@
 <div class="row">
 
 <div class="col-md-4">
-<img class="img-fluid" src="<?php the_field('articleimage');?>" alt="a woman'>
+<img class="img-fluid" src="<?php the_field('articleimage');?>" alt="a woman">
 <h4 class="article-title"><?php the_field('articletitle'); ?></h4>
 <p class="date" ><?php the_field('articledate'); ?></p>
 <p class="article-p"><?php the_field('articleexcerpt'); ?> </p>
